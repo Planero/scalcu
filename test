@@ -1,0 +1,86 @@
+<script language="JavaScript">
+<!-- hide this script from old browsers
+function temp(form)
+{
+  var s = parseFloat(form.DegS.value, 10);
+  var p = parseFloat(form.DegP.value, 10);
+
+
+
+  var comm = 0;
+  var buyave = 0;
+  var buy = 0;
+  
+ 
+ comm = s*p*0.0025;
+ buyave = s * p * 1.00295/s;
+ buy = s * p * 1.00295;
+  
+ 
+
+
+form.DegCOMM.value = comm;
+form.DegAVE.value = buyave;
+form.DegBUY.value = buy;
+
+
+
+}
+// done hiding from old browsers -->
+</script>
+
+
+
+
+<br />
+<form>
+<button type="reset" value="Reset">RESET</button><input name="calc" onclick="temp(this.form)" type="BUTTON" value="CALCULATE" />
+
+
+
+<br />
+<table border="1">
+
+<tbody>
+<tr>
+<td><span style="color: #01df01;"><b>BUY No. of Shares</b></span></td>
+<td><input maxlength="15" name="DegS" size="15" value="0" /></td>
+</tr>
+<tr>
+<td><span style="color: #01df01;"><b>BUY Price</b></span></td>
+<td><input maxlength="15" name="DegP" size="15" value="0" /></td>
+</tr>
+<tr>
+<td><span style="color: #01df01;">BUY Commission</span></td>
+<td><input name="DegCOMM" readonly="" size="15" /></td>
+</tr>
+<tr><td><span style="color: #01df01;">BUY Average Price</span></td>
+<td><input name="DegAVE" readonly="" size="15" /></td>
+
+
+</tr>
+<tr>
+<td><span style="color: #01df01;"><b>BUY Net Amount</b></span></td>
+<td><input name="DegBUY" readonly="" size="15" /></td>
+</tr>
+</tbody></table>
+<span style="font-family: Georgia, 'Times New Roman', serif;"><br /></span>
+<span style="font-family: Georgia, 'Times New Roman', serif;">Formulated for&nbsp;Investors and Traders</span><br />
+<div style="text-align: center;">
+<div style="text-align: left;">
+<span style="font-family: Georgia, Times New Roman, serif;">of the Philippine Stock Market.</span></div>
+</div>
+<div style="text-align: center;">
+<div style="text-align: left;">
+<br /></div>
+</div>
+<div style="text-align: center;">
+<div style="text-align: left;">
+<span style="font-family: Courier New, Courier, monospace;">Planero Loves You!
+
+
+</span></div>
+</div>
+<br />
+<br />
+<br /></form>
